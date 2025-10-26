@@ -7,7 +7,6 @@ import {
   FaHome,
   FaUser,
   FaBook,
-  FaRProject,
   FaProcedures,
   FaAccessibleIcon,
   FaInternetExplorer,
