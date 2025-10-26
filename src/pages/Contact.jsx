@@ -45,18 +45,18 @@ export default function Contact() {
         >
           <ContactForm />
         </motion.div>
+        {/* End of Contact */}
 
-        {/* Alternative Contact Options */}
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <a
-            href="mailto:your.email@example.com" // Replace with your email
+            href="ounthany5@gmail.com"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
             aria-label="Email Thany"
           >
             <FaEnvelope className="mr-2" /> Email Me
           </a>
           <a
-            href="https://linkedin.com/in/yourusername" // Replace with your LinkedIn
+            href="https://www.linkedin.com/in/oun-thany/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
@@ -65,7 +65,7 @@ export default function Contact() {
             <FaLinkedin className="mr-2" /> LinkedIn
           </a>
           <a
-            href="https://github.com/yourusername" // Replace with your GitHub
+            href="https://github.com/Thany168/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"

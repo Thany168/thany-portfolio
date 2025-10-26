@@ -4,14 +4,12 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaNodeJs,
   FaVuejs,
   FaPhp,
 } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 
 export default function Skills() {
-  // Define skills with categories, proficiency, and icon/image
   const frontEndSkills = [
     {
       name: "HTML",
@@ -38,11 +36,6 @@ export default function Skills() {
       proficiency: 80,
       icon: <SiTailwindcss size={40} className="text-teal-500" />,
     },
-    {
-      name: "Vue.js",
-      proficiency: 60,
-      icon: <FaVuejs size={40} className="text-green-500" />,
-    },
   ];
 
   const backEndSkills = [
@@ -51,7 +44,6 @@ export default function Skills() {
       proficiency: 65,
       icon: <FaPhp size={40} className="text-green-600" />,
     },
-    // Add more backend skills as needed
   ];
 
   const softSkills = [
@@ -59,8 +51,6 @@ export default function Skills() {
     { name: "Team Collaboration", proficiency: 80, icon: null },
     { name: "Communication", proficiency: 75, icon: null },
   ];
-
-  // Animation variants
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },

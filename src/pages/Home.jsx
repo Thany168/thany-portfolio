@@ -15,7 +15,6 @@ export default function Home() {
 
   return (
     <section className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-br from-indigo-100 via-white to-purple-100 dark:from-gray-800 dark:via-gray-900 dark:to-indigo-900 text-gray-900 dark:text-white pt-24 px-6 md:px-16 overflow-hidden">
-      {/* Left side - Profile Image */}
       <motion.div
         className="flex justify-center items-center mb-8 md:mb-0 md:w-1/2"
         initial="hidden"
@@ -29,9 +28,9 @@ export default function Home() {
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-indigo-500 dark:border-indigo-400"
           />
           {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-indigo-500 dark:bg-indigo-400 bg-opacity-0 group-hover:bg-opacity-50 rounded-full transition-opacity duration-300 flex items-center justify-center">
+          <div className="absolute inset-0 bg-indigo-500  bg-opacity-0 group-hover:bg-opacity-50 rounded-full transition-opacity duration-300 flex items-center justify-center">
             <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              Thany
+              Hello I'm Thany
             </span>
           </div>
         </div>
@@ -64,7 +63,7 @@ export default function Home() {
             Explore My Work
           </a>
           <a
-            href="/resume.pdf" // Replace with actual resume link
+            href="#"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
           >
             <FaFileDownload className="mr-2" /> Download Resume
@@ -73,7 +72,7 @@ export default function Home() {
         {/* Social Links */}
         <div className="flex justify-center md:justify-start gap-6 mt-4">
           <a
-            href="https://github.com/yourusername" // Replace with your GitHub
+            href="https://github.com/Thany168"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"

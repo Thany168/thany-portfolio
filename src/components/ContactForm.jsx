@@ -9,17 +9,17 @@ export default function ContactForm() {
       <input
         type="text"
         placeholder="Your Name"
-        className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 required:"
       />
       <input
         type="email"
         placeholder="Your Email"
-        className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 required:"
       />
       <textarea
         placeholder="Your Message"
         rows="4"
-        className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 required:"
       ></textarea>
       <motion.button
         type="submit"
