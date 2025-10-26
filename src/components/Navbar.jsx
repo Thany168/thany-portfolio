@@ -1,5 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaSun,
+  FaMoon,
+  FaBars,
+  FaTimes,
+  FaHome,
+  FaUser,
+  FaBook,
+  FaRProject,
+  FaProcedures,
+  FaAccessibleIcon,
+  FaInternetExplorer,
+  FaPhone,
+} from "react-icons/fa";
 import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeContext from "../context/ThemeContext";
@@ -41,7 +54,9 @@ export default function Navbar() {
                   : "text-black dark:text-white"
               }
             >
-              Home
+              <span className="flex items-center gap-2">
+                <FaHome /> Home
+              </span>
             </NavLink>
             <NavLink
               to="/about"
@@ -51,8 +66,23 @@ export default function Navbar() {
                   : "text-black dark:text-white"
               }
             >
-              About
+              <span className="flex items-center gap-2">
+                <FaUser /> About Me
+              </span>
             </NavLink>
+            <NavLink
+              to="/education"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                  : "text-black dark:text-white"
+              }
+            >
+              <span className="flex items-center gap-2 gap-2">
+                <FaBook /> Education
+              </span>
+            </NavLink>
+
             <NavLink
               to="/projects"
               className={({ isActive }) =>
@@ -61,7 +91,9 @@ export default function Navbar() {
                   : "text-black dark:text-white"
               }
             >
-              Projects
+              <span className="flex items-center gap-2">
+                <FaProcedures /> Projects
+              </span>
             </NavLink>
             <NavLink
               to="/skills"
@@ -71,7 +103,22 @@ export default function Navbar() {
                   : "text-black dark:text-white"
               }
             >
-              Skills
+              <span className="flex items-center gap-2">
+                <FaAccessibleIcon /> Skills
+              </span>
+            </NavLink>
+            <NavLink
+              to="/experience"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                  : "text-black dark:text-white"
+              }
+              onClick={toggleMobileMenu}
+            >
+              <span className="flex items-center gap-2">
+                <FaInternetExplorer /> Experience
+              </span>
             </NavLink>
             <NavLink
               to="/contact"
@@ -81,7 +128,9 @@ export default function Navbar() {
                   : "text-black dark:text-white"
               }
             >
-              Contact
+              <span className="flex items-center gap-2">
+                <FaPhone /> Contact
+              </span>
             </NavLink>
           </div>
 
@@ -108,7 +157,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu | when screen resize to Mobile */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -142,6 +191,16 @@ export default function Navbar() {
                 About
               </NavLink>
               <NavLink
+                to="/education"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                    : "text-black dark:text-white"
+                }
+              >
+                Education
+              </NavLink>
+              <NavLink
                 to="/projects"
                 className={({ isActive }) =>
                   isActive
@@ -162,6 +221,17 @@ export default function Navbar() {
                 onClick={toggleMobileMenu}
               >
                 Skills
+              </NavLink>
+              <NavLink
+                to="/experience"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
+                    : "text-black dark:text-white text-lg"
+                }
+                onClick={toggleMobileMenu}
+              >
+                Experience
               </NavLink>
               <NavLink
                 to="/contact"

@@ -1,29 +1,30 @@
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
-
+import portfolio from "../assets/portfolio.png";
+import tour from "../assets/tourproject.png";
 export default function Projects() {
   const projects = [
     {
       title: "Portfolio Website",
       desc: "A personal portfolio built with React and Tailwind.",
-      img: "https://i.pinimg.com/736x/16/33/db/1633db733e69653425af9431a8c92301.jpg",
+      img: portfolio,
       link: "#",
     },
     {
       title: "School Management App",
-      desc: "Vue.js-based web system for managing students and attendance.",
+      desc: "Pending Project",
       img: "/projects/project2.png",
       link: "#",
     },
     {
       title: "Tour & Travel System",
-      desc: "A Vue.js-based web system for managing travel bookings and itineraries.",
-      img: "/projects/project2.png",
+      desc: "Directed a team in creating a Tour & Travel web application for a final semester school project, utilizing HTML, CSS, JavaScript, and PHP.",
+      img: tour,
       link: "#",
     },
     {
-      title: "E-Commerce Platform",
-      desc: "A full-stack web application for online shopping, built with React and Node.js.",
+      title: "E-Commerce ",
+      desc: "Pending Project",
       img: "/projects/project3.png",
       link: "#",
     },

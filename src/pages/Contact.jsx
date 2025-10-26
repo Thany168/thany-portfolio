@@ -28,7 +28,7 @@ export default function Contact() {
         variants={sectionVariants}
       >
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-500">
-          Get in Touch
+          Contact Me
         </h2>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
           I’m excited to connect for new opportunities, collaborations, or just
@@ -49,14 +49,14 @@ export default function Contact() {
         {/* Alternative Contact Options */}
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <a
-            href="mailto:your.email@example.com" // Replace with your email
+            href="#"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
             aria-label="Email Thany"
           >
             <FaEnvelope className="mr-2" /> Email Me
           </a>
           <a
-            href="https://linkedin.com/in/yourusername" // Replace with your LinkedIn
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
@@ -65,7 +65,7 @@ export default function Contact() {
             <FaLinkedin className="mr-2" /> LinkedIn
           </a>
           <a
-            href="https://github.com/yourusername" // Replace with your GitHub
+            href="https://github.com/thany168"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import {
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaEnvelope,
   FaArrowUp,
   FaTelegram,
@@ -53,7 +52,7 @@ export default function Footer() {
             <FaGithub size={24} />
           </motion.a>
           <motion.a
-            href="https://https://t.me/thany_oun"
+            href="https://t.me/thany_oun"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 dark:text-gray-200 hover:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
@@ -64,7 +63,7 @@ export default function Footer() {
             <FaTelegram size={24} />
           </motion.a>
           <motion.a
-            href="ounthany5@gmail.com"
+            href="#"
             className="text-gray-300 dark:text-gray-200 hover:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
             aria-label="Email Thany"
             variants={linkVariants}

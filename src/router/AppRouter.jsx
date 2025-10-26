@@ -14,6 +14,8 @@ import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import Contact from "../pages/Contact";
 import { ThemeProvider } from "../context/ThemeContext"; // Import ThemeProvider
+import Experience from "../pages/Experience";
+import Education from "../pages/Education";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -37,6 +39,14 @@ function AnimatedRoutes() {
           }
         />
         <Route
+          path="/education"
+          element={
+            <PageWrapper>
+              <Education />
+            </PageWrapper>
+          }
+        />
+        <Route
           path="/projects"
           element={
             <PageWrapper>
@@ -49,6 +59,14 @@ function AnimatedRoutes() {
           element={
             <PageWrapper>
               <Skills />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/experience"
+          element={
+            <PageWrapper>
+              <Experience />
             </PageWrapper>
           }
         />
