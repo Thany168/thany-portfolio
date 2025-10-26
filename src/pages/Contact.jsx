@@ -45,18 +45,26 @@ export default function Contact() {
         >
           <ContactForm />
         </motion.div>
+        {/* End of Contact */}
 
-        {/* Alternative Contact Options */}
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <a
+<<<<<<< HEAD
             href="#"
+=======
+            href="ounthany5@gmail.com"
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
             aria-label="Email Thany"
           >
             <FaEnvelope className="mr-2" /> Email Me
           </a>
           <a
+<<<<<<< HEAD
             href="#"
+=======
+            href="https://www.linkedin.com/in/oun-thany/"
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
@@ -65,7 +73,11 @@ export default function Contact() {
             <FaLinkedin className="mr-2" /> LinkedIn
           </a>
           <a
+<<<<<<< HEAD
             href="https://github.com/thany168"
+=======
+            href="https://github.com/Thany168/"
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"

@@ -24,7 +24,7 @@ export default function Footer() {
             Thany's Portfolio
           </h3>
           <p className="text-sm text-gray-300 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Thany Limited edition solutions.
+            &copy; {new Date().getFullYear()} Thany Limited Edition solutions.
           </p>
         </div>
 
@@ -62,6 +62,7 @@ export default function Footer() {
           >
             <FaTelegram size={24} />
           </motion.a>
+<<<<<<< HEAD
           <motion.a
             href="#"
             className="text-gray-300 dark:text-gray-200 hover:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
@@ -71,6 +72,9 @@ export default function Footer() {
           >
             <FaEnvelope size={24} />
           </motion.a>
+=======
+
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
           <motion.button
             onClick={handleScrollToTop}
             className="text-gray-300 dark:text-gray-200 hover:text-indigo-400 dark:hover:text-indigo-300 transition-colors"

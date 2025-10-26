@@ -40,7 +40,7 @@ export default function Navbar() {
           to="/"
           className="text-2xl font-bold text-black dark:text-white hover:text-indigo-500 dark:hover:text-indigo-400"
         >
-          MyPortfolio
+          Thany's Portfolio
         </Link>
 
         <div className="flex items-center space-x-6">

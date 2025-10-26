@@ -31,7 +31,11 @@ export default function Home() {
           {/* Overlay on hover */}
           <div className="absolute inset-0 bg-indigo-500  bg-opacity-0 group-hover:bg-opacity-50 rounded-full transition-opacity duration-300 flex items-center justify-center">
             <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<<<<<<< HEAD
               Mr. Thany
+=======
+              Hello I'm Thany
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
             </span>
           </div>
         </div>
@@ -84,7 +88,11 @@ export default function Home() {
         {/* Social Links */}
         <div className="flex justify-center md:justify-start gap-6 mt-4">
           <a
+<<<<<<< HEAD
             href="https://github.com/thany168"
+=======
+            href="https://github.com/Thany168"
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"

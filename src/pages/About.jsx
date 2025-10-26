@@ -111,8 +111,16 @@ export default function About() {
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {[
+<<<<<<< HEAD
               { number: "1+", label: "Years Experience" },
               { number: "8", label: "Projects Done" },
+=======
+              { number: "4+", label: "Years Experience" },
+              { number: "30+", label: "Projects Done" },
+              { number: "200+", label: "Happy Users" },
+              { number: "50K+", label: "Code Lines" },
+              { number: "10+", label: "Tech Stacks" },
+>>>>>>> 4dd92f26410be1a1a2aa7cfc6e262cbd8cbb329d
               { number: "∞", label: "Learning Passion" },
             ].map((fact, i) => (
               <div
