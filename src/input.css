@@ -1,0 +1,53 @@
+/* 🌅 Sunrise and moving clouds background (Light Mode only) */
+.light-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(to top, #fef6e4 0%, #fce38a 40%, #f38181 100%);
+  animation: sunrise 20s ease-in-out infinite alternate;
+}
+
+/* Create moving clouds */
+.cloud {
+  position: absolute;
+  background: url("https://cdn.jsdelivr.net/gh/Thany168/clouds-animation/cloud1.png")
+    repeat-x;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0.4;
+  animation: moveClouds 60s linear infinite;
+}
+
+.cloud.cloud2 {
+  background: url("https://cdn.jsdelivr.net/gh/Thany168/clouds-animation/cloud2.png")
+    repeat-x;
+  top: 30%;
+  opacity: 0.5;
+  animation: moveClouds 90s linear infinite reverse;
+}
+
+/* 🌅 Sunrise sky color animation */
+@keyframes sunrise {
+  0% {
+    background: linear-gradient(to top, #fcd5ce 0%, #fefae0 40%, #90e0ef 100%);
+  }
+  50% {
+    background: linear-gradient(to top, #fde4cf 0%, #fdfcdc 40%, #a3cef1 100%);
+  }
+  100% {
+    background: linear-gradient(to top, #fef6e4 0%, #fce38a 40%, #f38181 100%);
+  }
+}
+
+/* ☁️ Cloud movement loop */
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

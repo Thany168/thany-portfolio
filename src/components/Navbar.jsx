@@ -7,10 +7,10 @@ import {
   FaHome,
   FaUser,
   FaBook,
-  FaProcedures,
-  FaAccessibleIcon,
-  FaInternetExplorer,
   FaPhone,
+  FaProjectDiagram,
+  FaCode,
+  FaBuilding,
 } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -91,7 +91,7 @@ export default function Navbar() {
               }
             >
               <span className="flex items-center gap-2">
-                <FaProcedures /> Projects
+                <FaProjectDiagram /> Projects
               </span>
             </NavLink>
             <NavLink
@@ -103,7 +103,7 @@ export default function Navbar() {
               }
             >
               <span className="flex items-center gap-2">
-                <FaAccessibleIcon /> Skills
+                <FaCode /> Skills
               </span>
             </NavLink>
             <NavLink
@@ -116,7 +116,7 @@ export default function Navbar() {
               onClick={toggleMobileMenu}
             >
               <span className="flex items-center gap-2">
-                <FaInternetExplorer /> Experience
+                <FaBuilding /> Experience
               </span>
             </NavLink>
             <NavLink
@@ -166,82 +166,103 @@ export default function Navbar() {
             exit="exit"
             variants={menuVariants}
           >
-            <div className="flex flex-col items-center py-4 space-y-4">
+            <div className="flex flex-col items-start py-4 space-y-4 px-4">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
-                    : "text-black dark:text-white text-lg"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
-                onClick={toggleMobileMenu} // Close menu on link click
+                onClick={toggleMobileMenu}
               >
-                Home
+                <FaHome /> Home
               </NavLink>
+
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
-                    : "text-black dark:text-white text-lg"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
                 onClick={toggleMobileMenu}
               >
-                About
+                <FaUser /> About
               </NavLink>
+
               <NavLink
                 to="/education"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold"
-                    : "text-black dark:text-white"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
+                onClick={toggleMobileMenu}
               >
-                Education
+                <FaBook /> Education
               </NavLink>
+
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
-                    : "text-black dark:text-white text-lg"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
                 onClick={toggleMobileMenu}
               >
-                Projects
+                <FaProjectDiagram /> Projects
               </NavLink>
+
               <NavLink
                 to="/skills"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
-                    : "text-black dark:text-white text-lg"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
                 onClick={toggleMobileMenu}
               >
-                Skills
+                <FaCode /> Skills
               </NavLink>
+
               <NavLink
                 to="/experience"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
-                    : "text-black dark:text-white text-lg"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
                 onClick={toggleMobileMenu}
               >
-                Experience
+                <FaBuilding /> Experience
               </NavLink>
+
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-indigo-500 dark:text-indigo-400 font-semibold text-lg"
-                    : "text-black dark:text-white text-lg"
+                  `flex items-center gap-2 w-full p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                    isActive
+                      ? "text-indigo-500 dark:text-indigo-400 font-semibold"
+                      : "text-black dark:text-white"
+                  }`
                 }
                 onClick={toggleMobileMenu}
               >
-                Contact
+                <FaPhone /> Contact
               </NavLink>
             </div>
           </motion.div>

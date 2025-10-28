@@ -60,16 +60,17 @@ export default function About() {
         variants={fadeUp}
         className="flex flex-col md:flex-row justify-between items-start gap-10 w-full max-w-5xl"
       >
-        <div className="flex-1">
-          <h3 className="bg-yellow-400 text-gray-900 font-bold text-lg inline-block px-4 py-1 rounded-md mb-5">
+        <div className="flex-1 text-center sm:text-left">
+          <h3 className="bg-yellow-400 text-gray-900 font-bold text-lg inline-block px-4 py-1 rounded-md mb-5 text-left sm:text-center">
             What I Do?
           </h3>
+
           <div className="space-y-6">
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div className="bg-yellow-400 text-gray-900 p-3 rounded-full text-xl">
                 <FaCode />
               </div>
-              <div>
+              <div className="text-center sm:text-left">
                 <h4 className="font-semibold text-lg">Frontend Development</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Crafting responsive and interactive web interfaces with React
@@ -77,11 +78,12 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-4">
+
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div className="bg-yellow-400 text-gray-900 p-3 rounded-full text-xl">
                 <FaPaintBrush />
               </div>
-              <div>
+              <div className="text-center sm:text-left">
                 <h4 className="font-semibold text-lg">UI / UX Design</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Designing user-friendly layouts with a focus on accessibility
@@ -89,11 +91,12 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-4">
+
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div className="bg-yellow-400 text-gray-900 p-3 rounded-full text-xl">
                 <FaServer />
               </div>
-              <div>
+              <div className="text-center sm:text-left">
                 <h4 className="font-semibold text-lg">System Integration</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Building reliable and efficient backend logic using APIs and
@@ -105,14 +108,16 @@ export default function About() {
         </div>
 
         {/* Fun Facts */}
-        <div className="flex-1">
+        <div className="flex-1 text-center sm:text-center">
           <h3 className="bg-yellow-400 text-gray-900 font-bold text-lg inline-block px-4 py-1 rounded-md mb-5">
-            Fun Facts
+            Highlights
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-4 sm:grid-cols-4 gap-6 items-center">
             {[
               { number: "1+", label: "Years Experience" },
               { number: "8", label: "Projects Done" },
+              { number: "2", label: "Languages" },
+
               { number: "∞", label: "Learning Passion" },
             ].map((fact, i) => (
               <div

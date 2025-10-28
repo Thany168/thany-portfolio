@@ -4,8 +4,8 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaVuejs,
   FaPhp,
+  FaLaravel,
 } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 
@@ -18,7 +18,7 @@ export default function Skills() {
     },
     {
       name: "CSS",
-      proficiency: 95,
+      proficiency: 85,
       icon: <FaCss3Alt size={40} className="text-blue-500" />,
     },
     {
@@ -44,12 +44,19 @@ export default function Skills() {
       proficiency: 65,
       icon: <FaPhp size={40} className="text-green-600" />,
     },
+    {
+      name: "Laravel",
+      proficiency: `Learning ? Pending `,
+      icon: <FaLaravel size={40} className="text-green-600" />,
+    },
   ];
 
   const softSkills = [
-    { name: "Problem Solving", proficiency: 85, icon: null }, // No icon for soft skills
-    { name: "Team Collaboration", proficiency: 80, icon: null },
-    { name: "Communication", proficiency: 75, icon: null },
+    { name: "Time Management" },
+    { name: "Problem Solving" },
+    { name: "Team Collaboration" },
+    { name: "Communication" },
+    { name: "Flexibility" },
   ];
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -174,12 +181,12 @@ export default function Skills() {
                 <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5 mt-2">
                   <div
                     className="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full"
-                    style={{ width: `${skill.proficiency}%` }}
+                    // style={{ width: `${skill.proficiency}%` }}
                   ></div>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                {/* <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
                   {skill.proficiency}% Proficiency
-                </p>
+                </p> */}
               </motion.div>
             ))}
           </div>

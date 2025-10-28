@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import cover from "../assets/Cover.jpg";
-
 export default function Home() {
   // Animation variants for Framer Motion
   const imageVariants = {
@@ -36,7 +35,6 @@ export default function Home() {
           </div>
         </div>
       </motion.div>
-
       <motion.div
         className="text-center md:text-left md:w-1/2 space-y-6"
         initial="hidden"

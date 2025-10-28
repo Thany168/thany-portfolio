@@ -7,10 +7,10 @@ function Experience() {
   const experiences = [
     {
       role: "System Training",
-      company: "ABC",
+      company: "CheckinMe",
       period: "May 2024 - Present",
       details:
-        "As a System Training at ABC since May 2024, I empower clients and business owners by delivering training on Attendance Systems, CRM, and Payroll Systems, while addressing their unique challenges. I collaborate closely with clients to understand their needs, communicate requirements to project management, and coordinate the seamless implementation of HR solutions. My role also involves testing new functional logic to enhance system performance and usability.",
+        "As a System Training at CheckinMe since May 2024, I empower clients and business owners by delivering training on Attendance Systems, CRM, and Payroll Systems, while addressing their unique challenges. I collaborate closely with clients to understand their needs, communicate requirements to project management, and coordinate the seamless implementation of HR solutions. My role also involves testing new functional logic to enhance system performance and usability.",
     },
     {
       role: "Pending",
