@@ -6,8 +6,13 @@ import {
   FaReact,
   FaPhp,
   FaLaravel,
+  FaGitAlt,
+  FaGithub,
+  FaGitlab,
+  FaCode,
+  FaDocker,
 } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 
 export default function Skills() {
   const frontEndSkills = [
@@ -34,7 +39,7 @@ export default function Skills() {
     {
       name: "TailwindCSS",
       proficiency: 80,
-      icon: <SiTailwindcss size={40} className="text-teal-500" />,
+      icon: <FaCode size={40} className="text-teal-500" />,
     },
   ];
 
@@ -42,12 +47,45 @@ export default function Skills() {
     {
       name: "PHP",
       proficiency: 65,
-      icon: <FaPhp size={40} className="text-green-600" />,
+      icon: <FaPhp size={40} className="text-purple-600" />,
     },
     {
       name: "Laravel",
-      proficiency: `Learning ? Pending `,
-      icon: <FaLaravel size={40} className="text-green-600" />,
+      proficiency: 50,
+      icon: <FaLaravel size={40} className="text-red-600" />,
+    },
+  ];
+
+  const tools = [
+    {
+      name: "Git",
+      proficiency: 80,
+      icon: <FaGitAlt size={40} className="text-orange-600" />,
+    },
+    {
+      name: "GitHub",
+      proficiency: 90,
+      icon: <FaGithub size={40} className="text-black dark:text-white" />,
+    },
+    {
+      name: "GitLab",
+      proficiency: 50,
+      icon: <FaGitlab size={40} className="text-orange-500" />,
+    },
+    {
+      name: "Postman",
+      proficiency: 80,
+      icon: <SiPostman size={40} className="text-orange-500" />,
+    },
+    {
+      name: "VS Code",
+      proficiency: 99,
+      icon: <FaCode size={40} className="text-blue-600" />,
+    },
+    {
+      name: "Docker",
+      proficiency: 60,
+      icon: <FaDocker size={40} className="text-blue-500" />,
     },
   ];
 
@@ -57,7 +95,9 @@ export default function Skills() {
     { name: "Team Collaboration" },
     { name: "Communication" },
     { name: "Flexibility" },
+    { name: "Adaptability" },
   ];
+
   const sectionVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -84,7 +124,6 @@ export default function Skills() {
           My Skills
         </h2>
 
-        {/* Technical Skills: Front End and Back End */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Front End Skills */}
           <motion.div
@@ -159,11 +198,48 @@ export default function Skills() {
           </motion.div>
         </div>
 
+        {/* Tools */}
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <h3 className="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">
+            Tools
+          </h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {tools.map((tool) => (
+              <motion.div
+                key={tool.name}
+                className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md w-full sm:w-64"
+                variants={skillVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  {tool.icon}
+                  <span className="text-lg font-medium">{tool.name}</span>
+                </div>
+                <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                  <div
+                    className="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full"
+                    style={{ width: `${tool.proficiency}%` }}
+                  ></div>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                  {tool.proficiency}% Proficiency
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Soft Skills */}
         <motion.div
           variants={sectionVariants}
           initial="hidden"
           animate="visible"
+          className="mt-12"
         >
           <h3 className="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">
             Soft Skills
@@ -178,15 +254,6 @@ export default function Skills() {
                 animate="visible"
               >
                 <span className="text-lg font-medium">{skill.name}</span>
-                <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5 mt-2">
-                  <div
-                    className="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full"
-                    // style={{ width: `${skill.proficiency}%` }}
-                  ></div>
-                </div>
-                {/* <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                  {skill.proficiency}% Proficiency
-                </p> */}
               </motion.div>
             ))}
           </div>

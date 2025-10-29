@@ -2,7 +2,18 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
+const email = "ounthany5@gmail.com";
+const subject = "Hello from Portfolio";
+const body = `Dear Thany,
 
+I came across your portfolio and was impressed by your work in web development.
+
+I would like to discuss potential collaboration opportunities or explore how we might work together.
+
+Looking forward to hearing from you.
+
+Best regards,
+[Your Name]`;
 export default function Contact() {
   // Animation variants
   const sectionVariants = {
@@ -38,7 +49,7 @@ export default function Contact() {
 
         {/* Contact Form */}
         <motion.div
-          className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg mb-8"
+          className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg mb-8 max-w-xl mx-auto "
           variants={formVariants}
           initial="hidden"
           animate="visible"
@@ -49,14 +60,16 @@ export default function Contact() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <a
-            href="#"
+            href={`mailto:${email}?subject=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`}
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
             aria-label="Email Thany"
           >
             <FaEnvelope className="mr-2" /> Email Me
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/oun-thany/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"

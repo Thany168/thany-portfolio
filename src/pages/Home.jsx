@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import cover from "../assets/Cover.jpg";
+import { Link } from "react-router-dom";
 export default function Home() {
   // Animation variants for Framer Motion
   const imageVariants = {
@@ -66,12 +67,13 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-          <a
-            href="#projects"
+          <Link
+            to="/skills"
             className="bg-indigo-600 dark:bg-indigo-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-transform duration-300 transform hover:scale-105"
           >
-            Explore My Work
-          </a>
+            Explore My Skill
+          </Link>
+
           <a
             href="#"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"

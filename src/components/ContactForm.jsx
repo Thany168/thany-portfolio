@@ -7,10 +7,11 @@ export default function ContactForm() {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
+    const phonenumber = form.phonenumber.value;
     const email = form.email.value;
     const message = form.message.value;
 
-    const text = `New Contact Form Message:\n\n Name: ${name}\n Email: ${email}\n Message: ${message}`;
+    const text = `New Contact Form Message:\n\n Name: ${name}\n PhoneNumber: ${phonenumber}\n Email: ${email}\n Message: ${message}`;
 
     try {
       const res = await fetch(
@@ -47,9 +48,16 @@ export default function ContactForm() {
         required
       />
       <input
+        name="phonenumber"
+        type="phone"
+        placeholder="Enter Phone Number"
+        className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        required
+      />
+      <input
         name="email"
         type="email"
-        placeholder="example@gmail.com"
+        placeholder="Enter Email"
         className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
         required
       />
