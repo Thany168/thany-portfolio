@@ -18,16 +18,34 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-r from-gray-900 via-indigo-900 to-gray-900 dark:from-gray-950 dark:via-indigo-950 dark:to-gray-950 text-white dark:text-gray-200 mt-12 py-8">
+      {/* 1st section */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 dark:from-indigo-300 dark:to-purple-300">
             Thany's Portfolio
           </h3>
           <p className="text-sm text-gray-300 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Thany Limited Edition solutions.
+            &copy; {new Date().getFullYear()} Thany solutions.
           </p>
         </div>
+        {/* End of 1st Section */}
 
+        {/* 2nd Section */}
+        {/* 2nd Section (Animated) */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center italic text-sm text-gray-400 dark:text-gray-500"
+        >
+          “Every bug is just a lesson waiting to be learned.”
+          <br />
+          Developed using React.js for the frontend and styled with Tailwind CSS
+        </motion.div>
+
+        {/*  */}
+
+        {/* Third section */}
         <div className="flex items-center gap-4">
           <motion.a
             href="https://www.linkedin.com/in/oun-thany/"
@@ -83,5 +101,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    // End of Third Section
   );
 }

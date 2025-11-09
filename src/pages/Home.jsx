@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaUser } from "react-icons/fa";
 import cover from "../assets/Cover.jpg";
 import { Link } from "react-router-dom";
+
 export default function Home() {
   // Animation variants for Framer Motion
   const imageVariants = {
@@ -15,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-br from-indigo-100 via-white to-purple-100 dark:from-gray-800 dark:via-gray-900 dark:to-indigo-900 text-gray-900 dark:text-white pt-24 px-6 md:px-16 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-br from-indigo-100 via-white to-purple-100 dark:from-gray-800 dark:via-gray-900 dark:to-indigo-900 text-gray-900 dark:text-white pt-24 px-6 md:px-16 overflow-hidden">
       <motion.div
         className="flex justify-center items-center mb-8 md:mb-0 md:w-1/2"
         initial="hidden"
@@ -29,13 +30,14 @@ export default function Home() {
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-indigo-500 dark:border-indigo-400"
           />
           {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-indigo-500  bg-opacity-0 group-hover:bg-opacity-50 rounded-full transition-opacity duration-300 flex items-center justify-center">
+          <div className="absolute inset-0 bg-indigo-500 bg-opacity-0 group-hover:bg-opacity-50 rounded-full transition-opacity duration-300 flex items-center justify-center">
             <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               Mr. Thany
             </span>
           </div>
         </div>
       </motion.div>
+
       <motion.div
         className="text-center md:text-left md:w-1/2 space-y-6"
         initial="hidden"
@@ -45,26 +47,13 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-500">
           Hey, I’m Thany
         </h1>
-        <p className="text-lg md:text-xl mb-6 leading-relaxed">
-          My name's{" "}
-          <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-            Oun Thany
-          </span>
-          . I was born in 2006 at Boeungry Village, Russey Keo Commune, Prek
-          Prasab District, Kratie Province. I’m currently a Year 4{" "}
-          <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-            Computer Science student
-          </span>{" "}
-          at the Royal University of Phnom Penh, passionate about building
-          innovative and scalable web solutions. Skilled in{" "}
-          <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-            ReactJS, JavaScript, and PHP Laravel
-          </span>
-          , I combine technical expertise with HR tech experience to create
-          user-focused applications. I’m driven by creativity, problem-solving,
-          and a desire to make meaningful digital experiences. Let’s build
-          something amazing together!
-        </p>
+
+        <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">
+          Welcome to my webpage
+        </h2>
+        <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400">
+          I’m a Web Developer!
+        </h2>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
           <Link
@@ -74,14 +63,14 @@ export default function Home() {
             Explore My Skill
           </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/about"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
           >
-            <FaFileDownload className="mr-2" /> Download Resume
-          </a>
+            <FaUser className="mr-2" /> About Me
+          </Link>
         </div>
-        {/* Social Links */}
+
         <div className="flex justify-center md:justify-start gap-6 mt-4">
           <a
             href="https://github.com/thany168"

@@ -26,32 +26,27 @@ export default function About() {
       >
         ABOUT ME
       </motion.h2>
-
       <motion.p
         initial="hidden"
         animate="visible"
         variants={fadeUp}
-        className="text-lg text-center max-w-3xl mb-10 text-gray-600 dark:text-gray-300"
+        className="text-lg text-center max-w-3xl mb-10 text-gray-600 dark:text-gray-300 leading-relaxed"
       >
-        I’m{" "}
+        Hi, I’m{" "}
         <span className="font-semibold text-indigo-600 dark:text-indigo-400">
           Oun Thany
         </span>
-        , a passionate{" "}
+        . I was born in 2006 in Boeungry Village, Russey Keo Commune, Prek
+        Prasab District, Kratie Province. I’m currently a Year 4{" "}
         <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-          Computer Science
+          Computer Science student
         </span>{" "}
-        student from the Royal University of Phnom Penh. I love turning ideas
-        into real-world digital solutions using modern web technologies like{" "}
+        at the Royal University of Phnom Penh, passionate about building
+        innovative and scalable web solutions. My key technical skills include{" "}
         <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-          React, Tailwind CSS, JavaScript,
-        </span>{" "}
-        and{" "}
-        <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-          Vite
+          ReactJS, Tailwind CSS, and PHP Laravel
         </span>
-        . My focus is on clean design, optimized performance, and creative
-        problem solving.
+        .
       </motion.p>
 
       <motion.div
