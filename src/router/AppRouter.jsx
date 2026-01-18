@@ -16,6 +16,7 @@ import Contact from "../pages/Contact";
 import { ThemeProvider } from "../context/ThemeContext"; // Import ThemeProvider
 import Experience from "../pages/Experience";
 import Education from "../pages/Education";
+import Notfound from "../pages/Notfound";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -78,6 +79,14 @@ function AnimatedRoutes() {
             </PageWrapper>
           }
         />
+        <Route
+          path="/*"
+          element={
+            <PageWrapper>
+              <Notfound />
+            </PageWrapper>
+          }
+        ></Route>
       </Routes>
     </AnimatePresence>
   );

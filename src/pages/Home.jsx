@@ -52,7 +52,7 @@ export default function Home() {
           Welcome to my webpage
         </h2>
         <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400">
-          I’m a Web Developer!
+          I’m a Computer Science'student!
         </h2>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">

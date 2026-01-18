@@ -2,13 +2,15 @@ import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import portfolio from "../assets/portfolio.png";
 import tour from "../assets/tourproject.png";
+import pyproject from "../assets/py-project.png";
+
 export default function Projects() {
   const projects = [
     {
       title: "Portfolio Website",
       desc: "A personal portfolio built with React and Tailwind.",
       img: portfolio,
-      link: "#",
+      link: "https://github.com/Thany168/thany-portfolio",
     },
     {
       title: "School Management App",
@@ -18,15 +20,15 @@ export default function Projects() {
     },
     {
       title: "Tour & Travel System",
-      desc: "Directed a team in creating a Tour & Travel web application for a final semester school project, utilizing HTML, CSS, JavaScript, and PHP.",
+      desc: "I'm a Leader team for a Tour & Travel web application, developed as a Final Year (Year 3, Semester II) project using HTML, CSS, JavaScript, and PHP.",
       img: tour,
-      link: "#",
+      link: "https://github.com/Thany168/tour_travel",
     },
     {
       title: "E-Commerce ",
-      desc: "Pending Project",
-      img: "/projects/project3.png",
-      link: "#",
+      desc: "Online Shopping Website .",
+      img: pyproject,
+      link: "https://py-ecommerce.vercel.app/",
     },
   ];
 
