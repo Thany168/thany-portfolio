@@ -13,16 +13,18 @@ function Experience() {
         "As a System Training at CheckinMe since May 2024, I empower clients and business owners by delivering training on Attendance Systems, CRM, and Payroll Systems, while addressing their unique challenges. I collaborate closely with clients to understand their needs, communicate requirements to project management, and coordinate the seamless implementation of HR solutions. My role also involves testing new functional logic to enhance system performance and usability.",
     },
     {
-      role: "Pending",
-      company: "Founding",
-      period: "Pending",
-      details: "Pending",
+      role: "Team Leader",
+      company: "School Assigment |Clothes Shop| RUPP",
+      period: "Year4th",
+      details:
+        "Led a team to design and develop a full-stack system, including a mobile application and admin panel, ensuring smooth functionality and user experience.Technologies: Laravel, Flutter, PostgreSQL",
     },
     {
-      role: "Pending",
-      company: "Founding",
-      period: "Pending",
-      details: "Pending",
+      role: "Team Leader",
+      company: "School Assigment |Tour&Travel System| RUPP",
+      period: "Year3rd",
+      details:
+        "Managed a team to design and build a tourism booking system, implementing features for both users and administrators, including bookings, account management, and dashboard controls.",
     },
   ];
 

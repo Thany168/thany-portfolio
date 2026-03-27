@@ -3,32 +3,33 @@ import ProjectCard from "../components/ProjectCard";
 import portfolio from "../assets/portfolio.png";
 import tour from "../assets/tourproject.png";
 import pyproject from "../assets/py-project.png";
+import phumyerng from "../assets/phumyerng.png";
 
 export default function Projects() {
   const projects = [
     {
       title: "Portfolio Website",
-      desc: "A personal portfolio built with React and Tailwind.",
+      desc: "A personal portfolio built with React and Tailwind CSS, highlighting my projects, skills, and development experience.",
       img: portfolio,
       link: "https://github.com/Thany168/thany-portfolio",
     },
     {
-      title: "School Management App",
-      desc: "Pending Project",
-      img: "/projects/project2.png",
-      link: "#",
-    },
-    {
       title: "Tour & Travel System",
-      desc: "I'm a Leader team for a Tour & Travel web application, developed as a Final Year (Year 3, Semester II) project using HTML, CSS, JavaScript, and PHP.",
+      desc: "Led a team in developing a Tour & Travel web application as a Final Year (Year 3, Semester II) project using HTML, CSS, JavaScript, and PHP.",
       img: tour,
       link: "https://github.com/Thany168/tour_travel",
     },
     {
       title: "E-Commerce ",
-      desc: "Online Shopping Website .",
+      desc: "Developed an online shopping website using mock data to simulate API fetching and understand data handling.",
       img: pyproject,
       link: "https://py-ecommerce.vercel.app/",
+    },
+    {
+      title: "Clothes Shop Application ",
+      desc: "Clothes Shop Application | Team Lead (Year 4). Led the development of a complete system, including a mobile application and admin dashboard.Tech Stack: Laravel, Flutter, PostgreSQL",
+      img: phumyerng,
+      link: "https://github.com/Vuthagk4/py-api.git",
     },
   ];
 

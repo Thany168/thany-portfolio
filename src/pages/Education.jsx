@@ -30,13 +30,13 @@ export default function Education() {
     {
       icon: <FaBookOpen />,
       title: "BoeungRy Secondary School, Kratie",
-      level: "General Education",
+      level: "Secondary Education",
       year: "2017 - 2019",
       desc: "---",
     },
     {
       icon: <FaBookOpen />,
-      title: "Primary School, Phnom Penh",
+      title: "Boeungry Primary School, Kratie ",
       level: "Primary Education",
       year: "2011 - 2016",
       desc: "---",
@@ -60,10 +60,10 @@ export default function Education() {
     },
     {
       icon: <FaCertificate />,
-      title: "Cloud Computing Fundamentals",
-      provider: "None Provider",
-      year: "Pending",
-      desc: "Gained hands-on experience with AWS services such as EC2, S3, and Lambda. Learned deployment and scaling of web applications on the cloud.",
+      title: "Laravel",
+      provider: "Self-Learning",
+      year: "2025",
+      desc: "Designed and developed Laravel-based applications, applying MVC pattern and backend practices.",
     },
   ];
   const languages = [

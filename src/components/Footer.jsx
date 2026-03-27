@@ -25,7 +25,7 @@ export default function Footer() {
             Thany's Portfolio
           </h3>
           <p className="text-sm text-gray-300 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Thany solutions.
+            &copy; {new Date().getFullYear()} Thany Dev.
           </p>
         </div>
         {/* End of 1st Section */}
@@ -40,7 +40,7 @@ export default function Footer() {
         >
           “Every bug is just a lesson waiting to be learned.”
           <br />
-          Developed using React.js for the frontend and styled with Tailwind CSS
+          Developed using React.js + Tailwind CSS
         </motion.div>
 
         {/*  */}

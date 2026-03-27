@@ -8,9 +8,8 @@ import {
   FaLaravel,
   FaGitAlt,
   FaGithub,
-  FaGitlab,
   FaCode,
-  FaDocker,
+  FaAndroid,
 } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 
@@ -18,12 +17,12 @@ export default function Skills() {
   const frontEndSkills = [
     {
       name: "HTML",
-      proficiency: 100,
+      proficiency: 99,
       icon: <FaHtml5 size={40} className="text-orange-500" />,
     },
     {
       name: "CSS",
-      proficiency: 85,
+      proficiency: 90,
       icon: <FaCss3Alt size={40} className="text-blue-500" />,
     },
     {
@@ -33,12 +32,12 @@ export default function Skills() {
     },
     {
       name: "React",
-      proficiency: 85,
+      proficiency: 90,
       icon: <FaReact size={40} className="text-cyan-500" />,
     },
     {
       name: "TailwindCSS",
-      proficiency: 80,
+      proficiency: 90,
       icon: <FaCode size={40} className="text-teal-500" />,
     },
   ];
@@ -46,12 +45,12 @@ export default function Skills() {
   const backEndSkills = [
     {
       name: "PHP",
-      proficiency: 65,
+      proficiency: 80,
       icon: <FaPhp size={40} className="text-purple-600" />,
     },
     {
       name: "Laravel",
-      proficiency: 50,
+      proficiency: 75,
       icon: <FaLaravel size={40} className="text-red-600" />,
     },
   ];
@@ -68,11 +67,6 @@ export default function Skills() {
       icon: <FaGithub size={40} className="text-black dark:text-white" />,
     },
     {
-      name: "GitLab",
-      proficiency: 50,
-      icon: <FaGitlab size={40} className="text-orange-500" />,
-    },
-    {
       name: "Postman",
       proficiency: 80,
       icon: <SiPostman size={40} className="text-orange-500" />,
@@ -83,9 +77,9 @@ export default function Skills() {
       icon: <FaCode size={40} className="text-blue-600" />,
     },
     {
-      name: "Docker",
-      proficiency: 60,
-      icon: <FaDocker size={40} className="text-blue-500" />,
+      name: "Android Studio",
+      proficiency: 99,
+      icon: <FaAndroid size={40} className="text-blue-600" />,
     },
   ];
 
@@ -205,30 +199,19 @@ export default function Skills() {
           animate="visible"
         >
           <h3 className="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">
-            Tools
+            Tools & Technologies
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {tools.map((tool) => (
               <motion.div
                 key={tool.name}
-                className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md w-full sm:w-64"
+                className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md w-full sm:w-64 flex items-center gap-3"
                 variants={skillVariants}
                 initial="hidden"
                 animate="visible"
               >
-                <div className="flex items-center gap-3 mb-2">
-                  {tool.icon}
-                  <span className="text-lg font-medium">{tool.name}</span>
-                </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
-                  <div
-                    className="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full"
-                    style={{ width: `${tool.proficiency}%` }}
-                  ></div>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                  {tool.proficiency}% Proficiency
-                </p>
+                {tool.icon}
+                <span className="text-lg font-medium">{tool.name}</span>
               </motion.div>
             ))}
           </div>

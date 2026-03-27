@@ -32,7 +32,7 @@ export default function About() {
         variants={fadeUp}
         className="text-lg text-center max-w-3xl mb-10 text-gray-600 dark:text-gray-300 leading-relaxed"
       >
-        Hi, I’m{" "}
+        Greeting, I’m{" "}
         <span className="font-semibold text-indigo-600 dark:text-indigo-400">
           Oun Thany
         </span>

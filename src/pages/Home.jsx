@@ -45,15 +45,17 @@ export default function Home() {
         variants={textVariants}
       >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-500">
-          Hey, I’m Thany
+          Greeting, I’m Oun Thany
         </h1>
 
         <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">
-          Welcome to my webpage
+          Computer Science Student & Aspiring Web Developer
         </h2>
-        <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400">
-          I’m a Computer Science'student!
-        </h2>
+
+        <p className="text-lg text-gray-600 dark:text-gray-400 mt-2">
+          I build modern, responsive web applications with a focus on clean
+          design and user experience.
+        </p>
 
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
           <Link
