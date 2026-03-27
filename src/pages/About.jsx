@@ -8,6 +8,7 @@ import {
   FaFileDownload,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import certificate from "../assets/checkinme_certificate.jpg";
 
 export default function About() {
   const fadeUp = {
@@ -110,9 +111,7 @@ export default function About() {
           <div className="grid grid-cols-4 sm:grid-cols-4 gap-6 items-center">
             {[
               { number: "1+", label: "Years Experience" },
-              { number: "8", label: "Projects Done" },
               { number: "2", label: "Languages" },
-
               { number: "∞", label: "Learning Passion" },
             ].map((fact, i) => (
               <div
@@ -171,6 +170,33 @@ export default function About() {
         >
           <FaLinkedin size={24} />
         </a>
+      </motion.div>
+
+      <motion.h2
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
+        className="text-5xl font-extrabold mb-2 tracking-wide mt-[50px]"
+      >
+        Certificate
+      </motion.h2>
+
+      <motion.div
+        className="w-full h-full flex gap-10 overflow-hidden shadow-lg"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <img
+          src={certificate}
+          alt="Certificate"
+          className="w-[200px] h-[300px] object-cover hover:scale-105 transition-transform duration-500"
+        />
+        <img
+          src={""}
+          alt="pending"
+          className="w-[200px] h-[300px] object-cover hover:scale-105 transition-transform duration-500"
+        />
       </motion.div>
     </section>
   );

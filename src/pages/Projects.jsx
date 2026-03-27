@@ -14,20 +14,20 @@ export default function Projects() {
       link: "https://github.com/Thany168/thany-portfolio",
     },
     {
-      title: "Tour & Travel System",
-      desc: "Led a team in developing a Tour & Travel web application as a Final Year (Year 3, Semester II) project using HTML, CSS, JavaScript, and PHP.",
-      img: tour,
-      link: "https://github.com/Thany168/tour_travel",
-    },
-    {
       title: "E-Commerce ",
       desc: "Developed an online shopping website using mock data to simulate API fetching and understand data handling.",
       img: pyproject,
       link: "https://py-ecommerce.vercel.app/",
     },
     {
+      title: "Tour & Travel System",
+      desc: "Led a team in developing a Tour & Travel web application as a 3rd Year project at RUPP using HTML, CSS, JavaScript, and PHP.",
+      img: tour,
+      link: "https://github.com/Thany168/tour_travel",
+    },
+    {
       title: "Clothes Shop Application ",
-      desc: "Clothes Shop Application | Team Lead (Year 4). Led the development of a complete system, including a mobile application and admin dashboard.Tech Stack: Laravel, Flutter, PostgreSQL",
+      desc: "Clothes Shop Application | Team Lead (4th Year , RUPP). Led the development of a complete system, including a mobile application and admin dashboard.Tech Stack: Laravel, Flutter, PostgreSQL",
       img: phumyerng,
       link: "https://github.com/Vuthagk4/py-api.git",
     },
