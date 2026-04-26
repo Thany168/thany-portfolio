@@ -4,6 +4,7 @@ import portfolio from "../assets/portfolio.png";
 import tour from "../assets/tourproject.png";
 import pyproject from "../assets/py-project.png";
 import phumyerng from "../assets/phumyerng.png";
+import movieapp from "../assets/movieapp.png";
 
 export default function Projects() {
   const projects = [
@@ -11,25 +12,35 @@ export default function Projects() {
       title: "Portfolio Website",
       desc: "A personal portfolio built with React and Tailwind CSS, highlighting my projects, skills, and development experience.",
       img: portfolio,
-      link: "https://github.com/Thany168/thany-portfolio",
+      link: "https://thany-portfolio.vercel.app/",
+      github: "https://github.com/Thany168/thany-portfolio",
     },
     {
       title: "E-Commerce ",
       desc: "Developed an online shopping website using mock data to simulate API fetching and understand data handling.",
       img: pyproject,
+
       link: "https://py-ecommerce.vercel.app/",
+      github: "https://github.com/Thany168/PY-Ecommerce",
+    },
+    {
+      title: "Movie-App ",
+      desc: "I developed a movie web application that fetches data from the TMDB API as part of learning Next.js.",
+      img: movieapp,
+      link: "https://flix-movie-kh.vercel.app/",
+      github: "https://github.com/Thany168/FlixMovie",
     },
     {
       title: "Tour & Travel System",
       desc: "Led a team in developing a Tour & Travel web application as a 3rd Year project at RUPP using HTML, CSS, JavaScript, and PHP.",
       img: tour,
-      link: "https://github.com/Thany168/tour_travel",
+      github: "https://github.com/Thany168/tour_travel",
     },
     {
       title: "Clothes Shop Application ",
       desc: "Clothes Shop Application | Team Lead (4th Year , RUPP). Led the development of a complete system, including a mobile application and admin dashboard.Tech Stack: Laravel, Flutter, PostgreSQL",
       img: phumyerng,
-      link: "https://github.com/Vuthagk4/py-api.git",
+      github: "https://github.com/Vuthagk4/py-api.git",
     },
   ];
 

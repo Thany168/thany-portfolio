@@ -5,6 +5,7 @@ import {
   FaBookOpen,
   FaCertificate,
 } from "react-icons/fa";
+import { MdModelTraining } from "react-icons/md";
 
 export default function Education() {
   const fadeUp = {
@@ -66,6 +67,20 @@ export default function Education() {
       desc: "Designed and developed Laravel-based applications, applying MVC pattern and backend practices.",
     },
   ];
+  // training course
+  const Training_Courses = [
+    {
+      icon: <MdModelTraining />,
+      title: "Zero to Hero",
+      WorkSpace: "CheckinMe",
+      Mentor: "Henry",
+      desc: "",
+      year: "2024",
+    },
+  ];
+  //end  training course
+
+  // language
   const languages = [
     {
       name: "Khmer",
@@ -142,7 +157,7 @@ export default function Education() {
         className="max-w-6xl mx-auto"
       >
         <h2 className="text-2xl font-bold mb-6 border-l-4 border-indigo-500 pl-3">
-          Short Courses & Certifications
+          Short Courses
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -164,6 +179,37 @@ export default function Education() {
           ))}
         </div>
       </motion.div>
+      {/* Soft Skill Training */}
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
+        className="max-w-6xl mx-auto mt-5"
+      >
+        <h2 className="text-2xl font-bold mb-6 border-l-4 border-indigo-500 pl-3 mt-5">
+          Soft Skill Training
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Training_Courses.map((course, index) => (
+            <motion.div
+              key={index}
+              variants={fadeUp}
+              className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-yellow-400"
+            >
+              <div className="text-indigo-500 text-3xl mb-3">{course.icon}</div>
+              <h3 className="text-xl font-semibold mb-1">{course.title}</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                {course.WorkSpace} • {course.year}
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                {course.desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+      {/*  */}
 
       {/* Languagee */}
       <section className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white py-20 px-6 md:px-16">

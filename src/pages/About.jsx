@@ -111,6 +111,7 @@ export default function About() {
           <div className="grid grid-cols-4 sm:grid-cols-4 gap-6 items-center">
             {[
               { number: "1+", label: "Years Experience" },
+              { number: "10+", label: "Projects" },
               { number: "2", label: "Languages" },
               { number: "∞", label: "Learning Passion" },
             ].map((fact, i) => (
