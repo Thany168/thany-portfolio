@@ -106,7 +106,7 @@ export default function Education() {
 
   return (
     <section className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white py-20 px-6 md:px-16">
-      {/* ===== PAGE TITLE ===== */}
+      {/* ===== PAgE TITLE == */}
       <motion.h1
         initial="hidden"
         animate="visible"

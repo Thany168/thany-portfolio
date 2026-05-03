@@ -66,10 +66,10 @@ export default function Home() {
           </Link>
 
           <Link
-            to="/about"
+            to="/projects"
             className="flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
           >
-            <FaUser className="mr-2" /> About Me
+            <FaUser className="mr-2" /> Projects
           </Link>
         </div>
 

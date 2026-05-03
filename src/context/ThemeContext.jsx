@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // Initialize dark mode based on localStorage or system preference
+  // Initialize dark mode
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     return savedTheme
@@ -11,7 +11,6 @@ export const ThemeProvider = ({ children }) => {
       : window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
-  // Apply dark mode class to document and save to localStorage
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
@@ -22,7 +21,7 @@ export const ThemeProvider = ({ children }) => {
     }
   }, [isDarkMode]);
 
-  // Toggle dark mode
+  // Toggle dark mode pel click vea change mode
   const toggleDarkMode = () => {
     setIsDarkMode((prev) => !prev);
   };
