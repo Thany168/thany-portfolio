@@ -6,6 +6,8 @@ import {
   FaCertificate,
 } from "react-icons/fa";
 import { MdModelTraining } from "react-icons/md";
+import kh from "../assets/cambodiaflag.jpg";
+import eng from "../assets/englishflag.jpg";
 
 export default function Education() {
   const fadeUp = {
@@ -84,7 +86,7 @@ export default function Education() {
   const languages = [
     {
       name: "Khmer",
-      flag: "../public/cambodiaflag.jpg",
+      flag: kh,
       skills: [
         { label: "Speaking", level: 100 },
         { label: "Reading", level: 100 },
@@ -94,7 +96,7 @@ export default function Education() {
     },
     {
       name: "English",
-      flag: "../public/englishflag.jpg",
+      flag: eng,
       skills: [
         { label: "Speaking", level: 90 },
         { label: "Reading", level: 98 },
@@ -118,7 +120,7 @@ export default function Education() {
         </span>
       </motion.h1>
 
-      {/* ===== FORMAL EDUCATION ===== */}
+      {/* ===== FORMAL EDUCATION === */}
       <motion.div
         initial="hidden"
         animate="visible"
@@ -149,7 +151,7 @@ export default function Education() {
         </div>
       </motion.div>
 
-      {/* ===== SHORT COURSES ===== */}
+      {/* ===SHORT COURSEs ===== */}
       <motion.div
         initial="hidden"
         animate="visible"
